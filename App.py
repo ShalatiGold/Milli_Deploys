@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load the best model and preprocessor
-model = joblib.load('C:/Users/User/Documents/models/best_model.pkl')
-preprocessor = joblib.load('C:/Users/User/Documents/models/preprocessor.pkl')
+model = joblib.load("best_model.pkl")
+preprocessor = joblib.load('preprocessor.pkl')
 
 # Define the input fields for the user
 st.title('Heart Disease Prediction System')
