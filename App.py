@@ -9,8 +9,8 @@ import pandas as pd
 
 def load_model_and_preprocessor():
     try:
-        model = joblib.load('C:/Users/User/Documents/models/best_model.pkl')
-        preprocessor = joblib.load('C:/Users/User/Documents/models/preprocessor.pkl')
+        model = joblib.load("best_model.pkl")
+        preprocessor = joblib.load("preprocessor.pkl")
         return model, preprocessor
     except FileNotFoundError:
         st.error("Model or Preprocessor file not found. Please ensure the files are present in the specified path.")
